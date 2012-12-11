@@ -1,0 +1,16 @@
+<h1>Proyecto: </h1> <%= @proyecto.name %>
+
+<h2> Variables </h2>
+
+<% @proyecto.variables.each do |vars| %>
+  <p> <%= vars.valor %> </p>
+<%end%>
+
+<%= form_for [@proyecto, @proyecto.variables.build] do |f| %>
+  <p><%= f.text_field :valor %></p>
+  <p><%= f.submit "Guardar" %> </p>
+<%end%>
+
+
+<%= link_to 'Edit', edit_proyecto_path(@proyecto) %> |
+<%= link_to 'Back', proyectos_path %>

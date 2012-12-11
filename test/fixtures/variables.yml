@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  proyecto_id: 1
+  etiqueta: MyString
+  valor: 1
+
+two:
+  proyecto_id: 1
+  etiqueta: MyString
+  valor: 1

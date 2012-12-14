@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre_proyecto: MyString
+  num_var: MyString
+
+two:
+  nombre_proyecto: MyString
+  num_var: MyString

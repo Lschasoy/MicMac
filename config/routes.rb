@@ -1,11 +1,12 @@
 AnalisEstruc::Application.routes.draw do
 
+
+  get "variables/create"
+  get "variables/destroy"
+
   resources :proyectos do
      resources :variables
   end
-
-  get "variable/create"
-  get "variable/destroy"
 
 
 

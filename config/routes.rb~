@@ -1,7 +1,7 @@
 AnalisEstruc::Application.routes.draw do
 
   resources :proyectos do
-     resources :Variables
+     resources :variables
   end
 
   get "variable/create"

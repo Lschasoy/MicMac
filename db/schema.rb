@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20121211181159) do
   create_table "variables", :force => true do |t|
     t.integer  "proyecto_id"
     t.string   "etiqueta"
-    t.integer  "valor"
+    t.string   "significado"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

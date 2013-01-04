@@ -1,5 +1,6 @@
 AnalisEstruc::Application.routes.draw do
-
+ 
+  root :to => "home#index"
 
   get "variables/create"
   get "variables/destroy"
@@ -8,7 +9,7 @@ AnalisEstruc::Application.routes.draw do
      resources :variables
   end
 
-
+  
 
 
   # The priority is based upon order of creation:

@@ -35,6 +35,7 @@ class ProyectosController < ApplicationController
   # GET /proyectos/1/edit
   def edit
     @proyecto = Proyecto.find(params[:id])
+    @matriz = {}
   end
 
   # POST /proyectos

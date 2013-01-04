@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-AnalisEstruc::Application.config.secret_token = '0d670b36bf3fec179efafa4cfda79438003e44b4df65fc84c4f2d172729e5e6dc397ba9700cc0685d863a80ebe9ff1bc4a5a0459c4ffc3ecf37f343ad1129476'
+AnaEstruc::Application.config.secret_token = '3ecf2dca453dc8faf3ce70319e47b0ee270ea49be8d2c84921ed69530d86678efdaeb11be2001c7b8fefc9ad9cf9de8f8c79ac2f8409e530758e5c28a5a3a11a'

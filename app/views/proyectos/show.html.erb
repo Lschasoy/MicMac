@@ -1,16 +1,20 @@
-<h1>Proyecto: </h1> <%= @proyecto.name %>
+<h1>Proyecto: <%= @proyecto.name %></h1>
 
-<h2> Variables </h2>
+<h2> Fase 1: Listado de Variables </h2>
 
 <% @proyecto.variables.each do |vars| %>
-  <p> <%= vars.valor %> </p>
+  <h4> <%= vars.etiqueta %> </h4> 
+  <p>  <%= vars.significado %> </p>
 <%end%>
 
 <%= form_for [@proyecto, @proyecto.variables.build] do |f| %>
-  <p><%= f.number_field :valor %></p>
-  <p><%= f.submit "Guardar" %> </p>
+  <p>Etiqueta    <%= f.text_field :etiqueta%> 
+     Significado <%= f.text_field :significado %>
+                 <%= f.submit "Guardar" %>
+                 <%= link_to 'Ejecutar', proyectos_path %>
+ </p>
 <%end%>
 
 
-<%= link_to 'Edit', edit_proyecto_path(@proyecto) %> |
-<%= link_to 'Back', proyectos_path %>
+
+<%= link_to 'Inicio', proyectos_path %>

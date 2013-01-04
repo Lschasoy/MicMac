@@ -1,6 +1,9 @@
-<h1>Editing proyecto</h1>
+<h1>Fase 2: Descripción de relaciones entre las variables</h1>
 
-<%= render 'form' %>
+<% @proyecto.variables.each do |vars| %>
+  <h4> <%= vars.etiqueta %> </h4> 
+  <p>  <%= vars.significado %> </p>
+<%end%>
 
-<%= link_to 'Show', @proyecto %> |
-<%= link_to 'Back', proyectos_path %>
+<%= link_to 'Mostrar', @proyecto %> |
+<%= link_to 'Inicio', proyectos_path %>
